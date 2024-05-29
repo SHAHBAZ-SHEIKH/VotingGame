@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    /* background-color: #3b3b3b; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2xyHJMyUxmNtWwZa4uKhxJ8so0kSl17vSDBC1-lcmjw&s');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.background-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3b3b3b;
+    opacity: 0.6;
+}
+
+.votingmain{
+    width: 50%;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    border-radius: 10px;
+    z-index: 10000;
+    /* overflow-y: scroll; */
+    
+}
+.votingdiv input{
+    width: 250px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #111;
+    color: #fff;
+}
+
+.votingdiv button{
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #E49B0F;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+/* .inputgap{
+    padding-left: 40px;
+} */
+.votingdiv button:hover{
+    background-color: #fff;
+    color: #E49B0F;
+    font-weight: 600;
+    border: 1px solid #E49B0F;
+}
+
+.votinglist{
+    margin-top: 20px;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 20px; */
+    /* overflow-y: scroll; */
+    
+    
+}
+#incre{
+    color: #E49B0F;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 40px;
+}
+.detail{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5px;
+    width: 300px;
+    /* background-color: purple; */
+    /* overflow-y: scroll; */
+    
+}
+.detail2 h4{
+    text-align: center;
+}
+
+.detail2{
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    /* background-color: red; */
+}
+
+#incre{
+    cursor: pointer;
+}
+.main-head{
+    margin-bottom: 10px;
+    z-index: 900000;
+}
+.main-head h2{
+    color: #fafafa;
+   
+}
+.serial{
+    font-weight: bold;
+}
+
+
+@media (max-width:800px){
+
+    .votinglist{
+        width: 50%;
+    }
+    .votingmain{
+        width: 60%;
+        height: 60%;
+    }
+}
+
+@media (max-width:600px){
+
+    .votinglist{
+        width: 60%;
+    }
+    .votingmain{
+        width: 70%;
+        height: 70%;
+    }
+    .votingdiv input{
+        width: 210px;
+    }
+}
+
+@media (max-width:450px){
+
+    .votinglist{
+        width: 80%;
+    }
+    .votingmain{
+        width: 85%;
+        height: 80%;
+    }
+    .votingdiv input{
+        width: 210px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width:370px){
+
+    .votinglist{
+        width: 95%;
+    }
+    .votingmain{
+        width: 95%;
+    }
+    .votingdiv input{
+        width: 210px;
+        font-size: 10px;
+        padding: 15px;
+    }
+    .votingdiv button{
+        padding: 15px;
+        font-weight: 300;
+    }
+}
+
+@media (max-width:355px){
+
+    .votinglist{
+        width: 95%;
+    }
+    .votingmain{
+        width: 95%;
+    }
+    .votingdiv input{
+        width: 250px;
+        font-size: 10px;
+        padding: 15px;
+    }
+    .votingdiv button{
+        padding: 15px;
+        font-weight: 300;
+        width: 250px;
+        margin-top: 10px;
+    }
+    .votingdiv{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
